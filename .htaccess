@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !\.(jpeg|jpg|png|ico|js|css)$
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ http://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule auth views/auth.php
+RewriteRule logout views/logout.php
+RewriteRule update_product views/update_product.php
+RewriteRule view_product views/view_product.php
+RewriteRule view_products views/view_products.php
+RewriteRule create_product views/create_product.php
+RewriteRule delete_product views/delete_product.php

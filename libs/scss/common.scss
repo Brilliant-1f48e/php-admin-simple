@@ -1,0 +1,45 @@
+@import "vars.scss";
+
+/* COMMON */
+.page__wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page{
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.outer{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1570px;
+  margin: 0 auto;
+}
+/* SECTION */
+.section{
+  padding: 50px 0;
+}
+.section-title {
+  font-size: 52px;
+  font-weight: $fw-bold;
+  margin-bottom: 30px;
+}
+.section .button__wrapper{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.button-actions{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
